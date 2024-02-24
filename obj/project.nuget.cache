@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8CFDefhRzKBIDsptTHTu3UAcwqlxgY/jplxtIrLG8m7Hq7zkdGZovgM2G96Pao4Hy+BxAa3GDrtpkwdKtKRCiQ==",
+  "success": true,
+  "projectFilePath": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/GameStore.csproj",
+  "expectedPackageFiles": [
+    "/home/Goosa/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
