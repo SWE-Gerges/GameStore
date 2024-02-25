@@ -28,3 +28,4 @@
 /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/GameStore.pdb
 /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/GameStore.genruntimeconfig.cache
 /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/ref/GameStore.dll
+/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/GameStore.sourcelink.json

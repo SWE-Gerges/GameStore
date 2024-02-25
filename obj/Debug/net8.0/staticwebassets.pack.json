@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/GameStore.bundle.scp.css"
     },
     {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
       "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

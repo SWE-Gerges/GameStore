@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s7737CseJBYims40p7YaB2AMJOMdc+SDcSd+lISJesE=",
+  "Hash": "V/X/AVook1QJO62+dMHclxORV9uJCbJlsZ+KEJt2PCc=",
   "Source": "GameStore",
   "BasePath": "_content/GameStore",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/scopedcss/projectbundle/GameStore.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/css/bootstrap.min.css",
+      "SourceId": "GameStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/",
+      "BasePath": "_content/GameStore",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/bootstrap.min.css"
     },
     {
       "Identity": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/css/site.css",
