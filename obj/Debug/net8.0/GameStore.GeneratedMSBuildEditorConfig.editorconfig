@@ -18,12 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Games/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FtZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Games/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FtZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Shared/Error.cshtml]

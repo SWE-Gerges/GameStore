@@ -32,6 +32,28 @@ namespace GameStore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Horror"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "StoryLine"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Action"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Sports"
+                        });
                 });
 
             modelBuilder.Entity("GameStore.Models.Device", b =>
@@ -53,6 +75,26 @@ namespace GameStore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Devices");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Icon = "bi bi-xbox",
+                            Name = "Xbox"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Icon = "bi bi-playstation",
+                            Name = "PlayStation"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Icon = "bi bi-nintendo-switch",
+                            Name = "Console"
+                        });
                 });
 
             modelBuilder.Entity("GameStore.Models.Game", b =>
