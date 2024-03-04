@@ -1,7 +1,17 @@
+using GameStore.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+string ConnectionString = builder.Configuration.GetConnectionString("GameStoreDB");
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+ options.UseMySql(ConnectionString,ServerVersion.AutoDetect(ConnectionString)));
+
+ builder.Services.AddMvc().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
