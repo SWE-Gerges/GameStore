@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICategoriesService, CategoriesService>();
 builder.Services.AddScoped<IDevicesService, DevicesServices>();
 builder.Services.AddScoped<IGameService, GameService>();
-string ConnectionString = builder.Configuration.GetConnectionString("GameStoreDB");
+string? ConnectionString = builder.Configuration.GetConnectionString("GameStoreDB");
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
