@@ -1,10 +1,15 @@
 using GameStore.Data;
+using GameStore.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ICategoriesService, CategoriesService>();
+builder.Services.AddScoped<IDevicesService, DevicesServices>();
+builder.Services.AddScoped<IGameService, GameService>();
 string ConnectionString = builder.Configuration.GetConnectionString("GameStoreDB");
 
 

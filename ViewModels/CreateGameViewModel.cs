@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
 using GameStore.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -9,12 +10,15 @@ public class CreateGameViewModel{
     [MaxLength(length: 250)]
     public string Name { get; set; } = string.Empty;
 
+    //[Extension]
     public IFormFile Cover { get; set; } = default!;
 
+    [Display(Name ="Category")]
     public int CategoryId { get; set; }
 
     public IEnumerable<SelectListItem> Categories { get; set; } = Enumerable.Empty<SelectListItem>();
-    public List<int> SelectedDevices { get; set; } = new List<int>();
+    [Display(Name = "Supported Devices")]
+    public List<int> SelectedDevices { get; set; } = default!;
 
     public IEnumerable<SelectListItem> Devices { get; set; } = Enumerable.Empty<SelectListItem>();
 
