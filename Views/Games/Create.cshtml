@@ -39,7 +39,7 @@
             <div>
                 <label asp-for="Cover" class="form-label mt-4"></label>
                 <input type="file" class="form-control" asp-for="Cover">
-                <small class="form-text text-muted">Only PNG, JPG, files allowed. Max Size 1MB</small>
+                <small class="form-text text-muted">Only @GameStore.Settings.FileSettings.allowedExtentions files allowed. Max Size @GameStore.Settings.FileSettings.maxFileSizeMB MB</small>
                 <span asp-validation-for="Cover" class="text-danger d-block" ></span>
             </div>
 
