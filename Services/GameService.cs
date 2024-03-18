@@ -22,14 +22,7 @@ public class GameService : IGameService
 
     public async Task Create(CreateGameViewModel model)
     {
-        var coverName = $"{Guid.NewGuid()}{Path.GetExtension(model.Cover.FileName)}";
-
-        var path = Path.Combine(_imagesPath, coverName);
-
-        using var stream = File.Create(path);
-        await model.Cover.CopyToAsync(stream);
-        
-
+        var coverName = await saveCover(model.Cover);
         Game game = new()
         {
             Name = model.Name,
@@ -69,13 +62,58 @@ public class GameService : IGameService
 
       return game;
     }
-    public void Edit(int id, Game updatedGame)
+    public async Task<Game?> Edit(UpdateGameViewModel model)
     {
-       _context.Update(updatedGame);
+       var game = _context.Games
+       .Include(g => g.Devices)
+       .SingleOrDefault(g => g.Id == model.Id);
 
+       if(game is null) return null;
+
+        var hasNewCover = model.Cover is not null;
+        var oldCover = game.Cover;
+       game.Name = model.Name;
+       game.Description = model.Description;
+       game.CategoryId = model.CategoryId;
+       game.Devices = model.SelectedDevices.Select(d => new GameDevice{DeviceId = d}).ToList();
+
+        if(hasNewCover)
+        {
+            game.Cover = await saveCover(model.Cover!);
+        }
+
+        var effectedRows = _context.SaveChanges();
+
+        if(effectedRows > 0 )
+        {
+            if(hasNewCover)
+            {
+                var cover = Path.Combine(_imagesPath, oldCover);
+                File.Delete(cover);
+            }
+
+            return game;
+        }
+
+        else{
+            var cover = Path.Combine(_imagesPath, game.Cover);
+                File.Delete(cover);
+            return null;
+        }
     
     }
 
+   
 
+    private async Task<string> saveCover(IFormFile cover)
+{
+     var coverName = $"{Guid.NewGuid()}{Path.GetExtension(cover.FileName)}";
 
+        var path = Path.Combine(_imagesPath, coverName);
+
+        using var stream = File.Create(path);
+        await cover.CopyToAsync(stream);
+
+        return coverName;
+}
 }

@@ -90,9 +90,27 @@ public class GamesController : Controller {
             CurrentCover = game.Cover
         };
 
-
-
-
         return View(viewModel);
+    }
+
+
+        [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Update(UpdateGameViewModel model)
+    {
+        if(!ModelState.IsValid)
+        {
+            model.Categories = _categoriesService.GetSelectList();
+
+            model.Devices = _devicesService.GetSelectList();
+
+            return View(model);
+        }
+
+        var game = await _gameService.Edit(model);
+        if(game is null) 
+            return BadRequest();
+
+        return RedirectToAction(nameof(Index));
     }
 }

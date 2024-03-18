@@ -11,5 +11,5 @@ public interface IGameService{
 
     Game? GetById(int id);
 
-    void Edit(int id, Game updatedGame);
+    Task<Game?> Edit( UpdateGameViewModel model);
 }
