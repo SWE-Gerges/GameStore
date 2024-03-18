@@ -24,7 +24,17 @@ public class GamesController : Controller {
 
     public IActionResult Index()
     {
-        return View();
+       var games = _gameService.GetAll();
+       return View(games);
+    }
+
+    public IActionResult Details(int id)
+    {
+        var game = _gameService.GetById(id);
+        if(game is null)
+            return NotFound();
+
+        return View(game);
     }
 
     [HttpGet]
@@ -40,8 +50,6 @@ public class GamesController : Controller {
         };
         return View(viewModel);
     }
-
-
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -61,5 +69,30 @@ public class GamesController : Controller {
         // Save Cover to Sereve
 
         return RedirectToAction(nameof(Index));
+    }
+
+
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        var game = _gameService.GetById(id);
+        if(game is null) 
+            return NotFound();
+        UpdateGameViewModel viewModel = new ()
+        {
+            Id = id,
+            Name = game.Name,
+            Description = game.Description,
+            CategoryId = game.CategoryId,
+            SelectedDevices = game.Devices.Select(d => d.DeviceId).ToList(),
+            Categories = _categoriesService.GetSelectList(),
+            Devices = _devicesService.GetSelectList(),
+            CurrentCover = game.Cover
+        };
+
+
+
+
+        return View(viewModel);
     }
 }

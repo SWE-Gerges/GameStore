@@ -22,8 +22,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FtZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Games/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FtZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Games/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FtZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Games/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2FtZXMvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/Views/Home/Index.cshtml]

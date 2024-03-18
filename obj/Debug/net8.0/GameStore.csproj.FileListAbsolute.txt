@@ -443,3 +443,4 @@
 /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/GameStore.csproj.AssemblyReference.cache
 /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/GameStore.MvcApplicationPartsAssemblyInfo.cs
 /home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/obj/Debug/net8.0/GameStore.csproj.CopyComplete
+/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/bin/Debug/net8.0/Microsoft.VisualStudio.Web.BrowserLink.dll

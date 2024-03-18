@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets/GameStore.bundle.scp.css"
     },
     {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/11c7f2d5-4be4-4e52-96b5-77015ead5a13.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/11c7f2d5-4be4-4e52-96b5-77015ead5a13.jpg"
+    },
+    {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/1285a602-7ada-44c0-b163-1573eb481ca8.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/1285a602-7ada-44c0-b163-1573eb481ca8.jpg"
+    },
+    {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/2f19ff7c-ef6c-41cd-9e49-48e5ac777f93.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/2f19ff7c-ef6c-41cd-9e49-48e5ac777f93.jpg"
+    },
+    {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/53ea096c-87c1-436b-9f70-a5b86e23fcef.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/53ea096c-87c1-436b-9f70-a5b86e23fcef.jpg"
+    },
+    {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/9e97bc0b-516b-4cd9-89ec-0f3289a43693.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/9e97bc0b-516b-4cd9-89ec-0f3289a43693.jpg"
+    },
+    {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/bad0d1f6-e109-449a-8f1f-3f38bb88d606.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/bad0d1f6-e109-449a-8f1f-3f38bb88d606.jpg"
+    },
+    {
+      "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/assets/images/games/cb4e5bfb-d4b7-4c3a-8446-4aad7bbec630.jpg",
+      "PackagePath": "staticwebassets/assets/images/games/cb4e5bfb-d4b7-4c3a-8446-4aad7bbec630.jpg"
+    },
+    {
       "Id": "/home/Goosa/Desktop/WebApps/MVC/GameStore/GameStore/wwwroot/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap.min.css"
     },
